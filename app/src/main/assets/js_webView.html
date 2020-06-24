@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script>
+        function callTest(num) {
+            window.ImageSelect.selectImage(num, '{"ratio":{"x":16.0,"y":9.0}}',true,"callBack");
+        }
+        function callBack(img) {
+            alert(img);
+        }
+    </script>
+</head>
+<body>
+<button type="button" id="button1" onClick="callTest(1)">select1</button>
+<button type="button" id="button2" onClick="callTest(2)">select2</button>
+</body>
+</html>
